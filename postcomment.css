@@ -1,0 +1,20 @@
+function postComment(data) {
+    $.ajax({
+      type: 'POST',
+      url: 'post_comment.php',
+      data: data,
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest'
+      },
+      success: postSuccess,
+      error: postError
+    });
+  }
+  
+  function postSuccess(data, textStatus, jqXHR) {
+    // add comment to UI
+  }
+  
+  function postError(jqXHR, textStatus, errorThrown) {
+    // display error
+  }

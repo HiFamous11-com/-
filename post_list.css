@@ -1,0 +1,3 @@
+#posts-list.has-comments li.no-comments {
+    display: none;
+}
